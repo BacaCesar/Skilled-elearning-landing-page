@@ -1,0 +1,43 @@
+.card {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  width: 343px;
+  background-image: var(--gradient-01);
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  align-items: center;
+  padding-inline: 16px;
+  padding-block: 24px;
+  border-radius: 10px;
+
+  &__container {
+    position: relative;
+    width: 343px;
+    height: 259px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 56px 28px 32px 28px;
+  }
+  &__logo {
+    position: absolute;
+    left: 28px;
+    top: -28px;
+  }
+  &__title {
+    color: var(--dark-blue);
+    font-weight: 800;
+    font-size: 20px;
+    margin: 0;
+  }
+  &__text {
+    color: var(--gray);
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}

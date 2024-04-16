@@ -1,28 +1,32 @@
-.header{
-    padding: 16px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    &__top{
-        height: 48px;
-        width: 343px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 16px;
-    }
-    &__logo{
-        height: 35px;
-        width: 89px;
-    }
-    &__title{
-       
-        font-size: 40px;
-        font-weight: 800;
-    }
-    &__text{
-      font-size: 16px;
-      line-height: 26px;
-      font-weight: 500;
-      color: var(--gray);
-    }
-   
+.header {
+  margin: 16px 16px 0 16px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  &__top {
+    height: 48px;
+    width: 343px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 16px;
+  }
+  &__logo {
+    width: 89px;
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: var(--gray);
+    padding-bottom: 24px;
+    margin-bottom: 0;
+  }
+  &__image {
+    margin-top: 46px;
+    align-items: center;
+  }
 }

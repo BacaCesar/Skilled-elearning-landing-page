@@ -1,18 +1,17 @@
-.button{
-    font-family: "Plus Jakarta Sans", sans-serif;
-    color: white;
-    background-color: var(--dark-blue);
-    border-radius: 28px;
-    padding-inline: 24px;
-    padding-block: 9px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.button-gradient-01{
-    font-family: "Plus Jakarta Sans", sans-serif;
-    height: 56px;
-    width: 167px;
-    background-color: var(--gradient-01);
+.button {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: white;
+  background-color: var(--dark-blue);
+  border-radius: 28px;
+  padding-inline: 24px;
+  padding-block: 16px;
 
+  &--gradient-01 {
+    background-image: var(--gradient-01);
+  }
+  &__link {
+    color: var(--pink);
+    font-weight: 700;
+    font-size: 18px;
+  }
 }

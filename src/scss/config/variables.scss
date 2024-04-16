@@ -1,11 +1,12 @@
 :root {
-  --light-blue: #666CA3;
-  --dark-blue: #13183F;
-  --gray: #83869A;
-  --pink: #F75780;
+  --light-blue: #666ca3;
+  --dark-blue: #13183f;
+  --gray: #83869a;
+  --pink: #f75780;
   --soft-pink: #ffa7c3;
-  --gradient-01: (#F02AA6, #FF6F48);
-  --gradient-02: (#4851FF, #F02AA6);
+  --gradient-01: linear-gradient(#f02aa6, #ff6f48);
+  --gradient-02: (#4851ff, #f02aa6);
+  --main: linear-gradient(white, #f0f1ff);
   /* Variables CSS */
 }
 
