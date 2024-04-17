@@ -14,4 +14,11 @@
     font-weight: 700;
     font-size: 18px;
   }
+  &--gradient-02 {
+    color: white;
+    border-radius: 28px;
+    padding-inline: 24px;
+    padding-block: 16px;
+    background-image: var(--gradient-02);
+  }
 }

@@ -29,20 +29,31 @@
         />
         <a class="button" href="#">Get Started</a>
       </div>
-      <div class="header__container">
-        <h1 class="header__title">Maximize skill, minimize budget</h1>
-        <p class="header__text">
-          Our modern courses across a range of in-demand skills will give you
-          the knowledge you need to live the life you want.
-        </p>
-        <a class="button button--gradient-01" href="#">Get Started</a>
-      </div>
-      <div>
-        <img
-          class="header__image"
-          src="./assets/images/image-hero-mobile.webp"
-          alt="image-hero"
-        />
+      <div class="header__tablet">
+        <div class="header__container">
+          <h1 class="header__title">Maximize skill, minimize budget</h1>
+          <p class="header__text">
+            Our modern courses across a range of in-demand skills will give you
+            the knowledge you need to live the life you want.
+          </p>
+          <a class="button button--gradient-01" href="#">Get Started</a>
+        </div>
+        <div>
+          <picture class="header__image">
+            <source
+              media="(min-width: 768px)"
+              srcset="./assets/images/image-hero-tablet@2x.webp"
+            />
+            <source
+              media="(min-width: 360px)"
+              srcset="./assets/images/image-hero-mobile@2x.webp"
+            />
+            <img
+              src="./assets/images/image-hero-mobile.webp"
+              alt="image-hero"
+            />
+          </picture>
+        </div>
       </div>
     </header>
 
@@ -132,7 +143,7 @@
     <footer class="footer">
       <div class="footer__container">
         <img src="./assets/images/logo-light.svg" alt="icon-skilled" />
-        <a class="button-gradient-02" href="#"></a>
+        <a class="button--gradient-02" href="#">Get Started</a>
       </div>
     </footer>
     <script type="module" src="./js/index.js"></script>

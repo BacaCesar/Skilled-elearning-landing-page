@@ -1,0 +1,21 @@
+@use '../mixins/resposive.scss' as *;
+.footer {
+  background-color: var(--dark-blue);
+  height: 120px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+
+  &__container {
+    height: 48px;
+    width: 343px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    @include responsive(tablet) {
+      width: 689px;
+    }
+  }
+}

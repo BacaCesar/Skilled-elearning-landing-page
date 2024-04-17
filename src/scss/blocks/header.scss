@@ -1,6 +1,13 @@
+@use '../mixins/resposive.scss' as *;
+
 .header {
   margin: 16px 16px 0 16px;
   font-family: 'Plus Jakarta Sans', sans-serif;
+  overflow: hidden;
+
+  @include responsive(tablet) {
+    margin: 0;
+  }
   &__top {
     height: 48px;
     width: 343px;
@@ -9,9 +16,32 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 16px;
+    @include responsive(tablet) {
+      width: 689px;
+    }
+    @include responsive(desktop) {
+      width: 1110px;
+      margin-inline: auto;
+    }
+  }
+  &__tablet {
+    margin-top: 100px;
+    margin-bottom: 186px;
+    @include responsive(tablet) {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+    }
   }
   &__logo {
     width: 89px;
+  }
+  &__container {
+    @include responsive(tablet) {
+      margin-left: 39px;
+      width: 398px;
+      height: 284px;
+    }
   }
   &__title {
     font-size: 40px;
@@ -28,5 +58,11 @@
   &__image {
     margin-top: 46px;
     align-items: center;
+    @include responsive(tablet) {
+      position: absolute;
+      width: 640.71px;
+      top: -300px;
+      right: -280px;
+    }
   }
 }
