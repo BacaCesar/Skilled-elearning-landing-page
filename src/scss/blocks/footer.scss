@@ -17,5 +17,8 @@
     @include responsive(tablet) {
       width: 689px;
     }
+    @include responsive(tablet) {
+      width: 1024px;
+    }
   }
 }

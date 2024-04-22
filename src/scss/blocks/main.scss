@@ -6,5 +6,10 @@
   padding: 0 16px 80px 16px;
   @include responsive(tablet) {
     padding: 0 39px 0 39px;
+    gap: 16px;
+  }
+  @include responsive(laptop) {
+    padding: 0 165px 0 140px;
+    gap: 16px;
   }
 }

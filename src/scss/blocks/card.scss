@@ -14,6 +14,10 @@
     height: 259px;
     width: 339px;
   }
+  @include responsive(tablet) {
+    height: 322px;
+    width: 350px;
+  }
 
   &__container {
     position: relative;
@@ -48,6 +52,12 @@
   @include responsive(tablet) {
     display: grid;
     grid-template-columns: repeat(2, 340px);
+    gap: 56px 11px;
+    padding-bottom: 86px;
+  }
+  @include responsive(laptop) {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
     gap: 56px 11px;
     padding-bottom: 86px;
   }

@@ -1,3 +1,4 @@
+@use '../mixins/hover.scss' as *;
 .button {
   font-family: 'Plus Jakarta Sans', sans-serif;
   color: white;
@@ -5,9 +6,17 @@
   border-radius: 28px;
   padding-inline: 24px;
   padding-block: 16px;
+  @include hover {
+    background-image: none;
+    background-color: var(--light-blue);
+  }
 
   &--gradient-01 {
     background-image: var(--gradient-01);
+    @include hover {
+      background-image: none;
+      background-color: var(--light-blue);
+    }
   }
   &__link {
     color: var(--pink);
@@ -20,5 +29,9 @@
     padding-inline: 24px;
     padding-block: 16px;
     background-image: var(--gradient-02);
+    @include hover {
+      background-image: none;
+      background-color: var(--light-blue);
+    }
   }
 }

@@ -1,3 +1,4 @@
+@use '../mixins/resposive.scss' as *;
 html {
   scroll-behavior: smooth;
 }
