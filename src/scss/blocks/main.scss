@@ -3,7 +3,7 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
   gap: 24px;
   background-image: var(--main);
-  padding: 47px 16px 80px 16px;
+  padding: 0 16px 80px 16px;
   @include responsive(tablet) {
     padding: 0 39px 0 39px;
   }

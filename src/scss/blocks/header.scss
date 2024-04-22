@@ -19,28 +19,27 @@
     @include responsive(tablet) {
       width: 689px;
     }
-    @include responsive(desktop) {
+    @include responsive(laptop) {
       width: 1110px;
       margin-inline: auto;
     }
   }
-  &__tablet {
-    margin-top: 100px;
-    margin-bottom: 186px;
-    @include responsive(tablet) {
-      display: flex;
-      flex-direction: row;
-      position: relative;
-    }
-  }
+
   &__logo {
     width: 89px;
   }
   &__container {
+    width: 343px;
+    background-color: yellow;
     @include responsive(tablet) {
       margin-left: 39px;
       width: 398px;
       height: 284px;
+    }
+    @include responsive(laptop) {
+      margin-left: 165px;
+      width: 457px;
+      height: 359px;
     }
   }
   &__title {
@@ -52,17 +51,21 @@
     line-height: 26px;
     font-weight: 500;
     color: var(--gray);
-    padding-bottom: 24px;
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
   &__image {
-    margin-top: 46px;
     align-items: center;
     @include responsive(tablet) {
       position: absolute;
       width: 640.71px;
       top: -300px;
       right: -280px;
+      @include responsive(laptop) {
+        width: 991.63px;
+        height: 936.92px;
+        top: -1900px;
+        right: -280px;
+      }
     }
   }
 }
